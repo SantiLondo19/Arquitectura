@@ -1,0 +1,130 @@
+.header a{
+    color: var(--blanco);
+    font-size: 2rem;
+}
+.header{
+    min-height: 60rem;
+    background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    padding: 5rem 0;
+}
+ 
+.contenido-header{
+    display: flex;
+    flex-direction: column;
+    height: calc( 60rem - 10rem );
+    color: var(--blanco);
+    justify-content: space-between;
+}
+.nombre-sitio{
+    font-weight: 300;
+    text-align: center;
+    font-size: 2.8rem;
+}
+@media(min-width: 550px) { 
+    .nombre-sitio{
+        font-size: 4.3rem;
+    }
+}
+@media(min-width: 768px) { 
+    .nombre-sitio{
+        font-size: 5rem;
+    }
+}
+.nombre-sitio span{
+    font-weight: 900;
+}
+@media(min-width: 1200px) { 
+    .barra{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media(min-width: 1200px) { 
+    .contacto{
+        align-items: flex-end;
+    }
+}
+.navegacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 1rem;
+    /* gap: 2rem; */
+} 
+.navegacion a{
+    font-size: 1.6rem;
+    padding: 0 1rem;
+    transition: background-color 300ms;
+    width: 100%;
+    text-align: center;
+}
+.navegacion a:hover{
+    background-color: rgb( 255 255 255 / .5 );
+    color: var(--negro);
+}
+@media(min-width: 1200px) { 
+    .navegacion{
+        flex-direction: row;
+    }
+    .navegacion a {
+        font-size: 2rem;
+    }
+}
+@media(min-width: 1600px) { 
+    .contacto a{
+        font-size: 2rem;
+    }
+}
+.telefono{
+    display: flex;
+    margin-right: 1rem;
+}
+.telefono::before{
+    content: '';
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    background-image: url(../img/telefono.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.slogan p {
+    margin: 0;
+}
+.slogan h1 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+@media(min-width: 768px) { 
+    .slogan h1 {
+        font-size: 4.3rem;
+    }
+}
+@media(min-width: 1200px) { 
+    .slogan h1 {
+        font-size: 5rem;
+    }
+}
+.slogan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+@media(min-width: 1200px) { 
+    .slogan {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}
